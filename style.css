@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    width: 100%;
+    padding: 20px;
+    background-color: #fd79a8;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: 2px;
+  }
+  
+  .controls {
+    margin: 20px 0;
+  }
+  
+  .controls select {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  #tungtung {
+    width: 300px;
+    transition: 0.2s;
+  }
+  
+  #sound {
+    font-size: 2rem;
+    color: #d63031;
+    font-weight: bold;
+    height: 40px;
+    margin-top: 10px;
+  }
+  
+  .leaderboard {
+    width: 300px;
+    background: #ffe6e6;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .leaderboard h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #fd79a8;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .leaderboard ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .leaderboard li {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #2d3436;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, color 0.2s;
+  }
+  
+  .leaderboard li:hover {
+    transform: scale(1.05);
+    color: #fd79a8;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

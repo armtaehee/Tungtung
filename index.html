@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tungtung Sahur World Leaderboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>TUNGTUNG SAHUR POP WORLD!</h1>
+</header>
+
+<div class="controls">
+  <label for="countrySelect">Choose Your Country:</label>
+  <select id="countrySelect">
+    <option value="Thailand">Thailand</option>
+    <option value="Indonesia">Indonesia</option>
+    <option value="Malaysia">Malaysia</option>
+    <option value="Philippines">Philippines</option>
+    <option value="Singapore">Singapore</option>
+    <option value="Other">Other</option>
+  </select>
+</div>
+
+<div class="container" onclick="popTungtung()">
+  <img id="tungtung" src="image/before.webp" alt="Tungtung Sahur">
+  <p id="sound"></p>
+</div>
+
+<div class="leaderboard">
+  <h2>Leaderboard</h2>
+  <ul id="leaderboardList"></ul>
+</div>
+<audio id="bonkSound" src="sound/Tung Tung Tung Sahur but in 4K (Original Meme).mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
